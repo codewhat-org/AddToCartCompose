@@ -65,17 +65,17 @@ private fun AnimateToTarget(
     val animatable = remember { Animatable(0f) }
 
     val scale = (1.5f - animatable.value).coerceAtLeast(0.5f)
+    val newTranslationX = info.run {
+        position.x + (target.x - position.x) * animatable.value
+    }
+    val newTranslationY = info.run {
+        position.y + (target.y - position.y) * animatable.value - size.height / 2
+    }
 
     Box(
         modifier = Modifier.graphicsLayer {
-            translationX = info.run {
-                position.x + (target.x - position.x) * animatable.value
-            }
-
-            translationY = info.run {
-                position.y + (target.y - position.y) * animatable.value - size.height / 2
-            }
-
+            translationX = newTranslationX
+            translationY = newTranslationY
             scaleX = scale
             scaleY = scale
         }
