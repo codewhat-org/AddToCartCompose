@@ -12,10 +12,10 @@ import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import vn.begreat.addtocard.card.AddToCartContainer
-import vn.begreat.addtocard.card.AddToCartState
-import vn.begreat.addtocard.card.CartTarget
-import vn.begreat.addtocard.card.rememberAddToCartState
+import vn.begreat.addtocard.cart.AddToCartContainer
+import vn.begreat.addtocard.cart.AddToCartState
+import vn.begreat.addtocard.cart.CartTarget
+import vn.begreat.addtocard.cart.rememberAddToCartState
 import vn.begreat.addtocard.items.CartItemList
 import vn.begreat.addtocard.ui.theme.AddToCardComposeTheme
 

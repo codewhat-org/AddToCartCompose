@@ -16,9 +16,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import vn.begreat.addtocard.R
-import vn.begreat.addtocard.card.AddToCartState
-import vn.begreat.addtocard.card.CartItemTarget
-import vn.begreat.addtocard.card.rememberAddToCartState
+import vn.begreat.addtocard.cart.AddToCartState
+import vn.begreat.addtocard.cart.CartItemTarget
+import vn.begreat.addtocard.cart.rememberAddToCartState
 import vn.begreat.addtocard.ui.theme.AddToCardComposeTheme
 
 
